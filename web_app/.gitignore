@@ -1,0 +1,22 @@
+#pep 582 used by e.g
+__pypackages__/
+
+#celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+#sagemath ParsedFiles
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# spyder project settings
+.spyderproject
+.spyproject
