@@ -14,6 +14,7 @@ print("AUTH", auth)
 auth.set_access_token(TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET)
 
 api = tweepy.API(auth)
+print("API", api )
 user = api.get_user("Chrisalbon")
 print("USER", user)
 print(user.screen_name)
