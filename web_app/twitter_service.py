@@ -20,7 +20,7 @@ def twitter_api():
 
 if __name__ == "__main__":
     api = twitter_api()
-    user = api.get_user("Chrisalbon")
+    user = api.get_user("realDonaldTrump")
     print("USER", user)
     print(user.screen_name)
     print(user.name)

@@ -16,7 +16,7 @@ def create_app():
     app = Flask(__name__)
 
     # configuring the database
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:////Users/alxander44/Desktop/web_app_done/web_app_4444.db"
+    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:////Users/alxander44/Desktop/twitter_app/web_app_4444.db"
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     app.config["SECRET_KEY"] = SECRET_KEY
     db.init_app(app)
