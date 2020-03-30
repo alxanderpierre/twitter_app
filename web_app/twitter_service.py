@@ -14,10 +14,22 @@ print("AUTH", auth)
 auth.set_access_token(TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET)
 
 api = tweepy.API(auth)
-print("API",api)
+user = api.get_user("Chrisalbon")
+print("USER", user)
+print(user.screen_name)
+print(user.name)
+print(user.followers_count)
 
-public_tweets = api.home_timeline()
-for tweet in public_tweets:
-    print(type(tweet))
-    print(tweet.text)
-    print("-----------------")
+breakpoint()
+
+
+#
+#print("API",api)
+
+
+
+# public_tweets = api.home_timeline()
+#for tweet in public_tweets:
+#    print(type(tweet))
+#    print(tweet.text)
+#    print("-----------------")
